@@ -2,18 +2,10 @@
  * Controllers for MK app
  */
 
-/// <reference path="../bower_components/DefinitelyTyped/jquery/jquery.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular-route.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/bootstrap/bootstrap.d.ts" />
-/// <reference path="mk-definitions.d.ts"/>
-/// <reference path="mk-util.ts"/>
-/// <reference path="mk-ui.ts"/>
-
 module MusikschuleKraft {
-  var mkControllers:ng.IModule = angular.module('mkControllers', [ 'ngSanitize' ]);
+  var mkControllers: ng.IModule = angular.module('mkControllers', ['ngSanitize']);
 
-  mkControllers.controller('MainController', ($scope:IMainScope, $anchorScroll:ng.IAnchorScrollService, $http:ng.IHttpService, $timeout:ng.ITimeoutService) => {
+  mkControllers.controller('MainController', ($scope: IMainScope, $anchorScroll: ng.IAnchorScrollService, $http: ng.IHttpService, $timeout: ng.ITimeoutService) => {
     $http.get('data/content/angebot.json')
       .success(data => {
         $scope.angebot = data;
@@ -33,7 +25,6 @@ module MusikschuleKraft {
       $scope.slug = args.slug;
       $scope.titlePostfix = args.slug ? ' - ' + CapitaliseFirstLetter(args.slug) : '';
       ApplyRendering();
-      InitializeGoogleMaps();
       $('.carousel').carousel();
       $anchorScroll();
       $timeout(() => {
@@ -44,13 +35,13 @@ module MusikschuleKraft {
     });
   });
 
-  mkControllers.controller('ContactMailController', ($scope:IContactMailScope, $http:ng.IHttpService, $location:ng.ILocationService, $filter:ng.IFilterService, $route:ng.route.IRouteService) => {
+  mkControllers.controller('ContactMailController', ($scope: IContactMailScope, $http: ng.IHttpService, $location: ng.ILocationService, $filter: ng.IFilterService, $route: ng.route.IRouteService) => {
     $scope.message = {};
     $scope.submitted = false;
     $scope.mailsent = false;
     $scope.error = false;
 
-    $scope.sendContactMail = (isFormValid:boolean) => {
+    $scope.sendContactMail = (isFormValid: boolean) => {
       $scope.submitted = true;
       if (isFormValid) {
 
@@ -75,7 +66,7 @@ module MusikschuleKraft {
     };
   });
 
-  mkControllers.controller('RouteController', ($scope:ng.IScope, $location:ng.ILocationService) => {
+  mkControllers.controller('RouteController', ($scope: ng.IScope, $location: ng.ILocationService) => {
     var parts = $location.path().split('/');
     var slug = parts.length > 1 ? parts[1] : "";
     $scope.$emit('routeLoaded', { slug: slug });

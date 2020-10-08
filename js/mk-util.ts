@@ -2,11 +2,8 @@
  * Utilities JS
  */
 
-
-/// <reference path="../bower_components/DefinitelyTyped/jquery/jquery.d.ts" />
-
 module MusikschuleKraft {
-  export function CapitaliseFirstLetter(text:string) {
+  export function CapitaliseFirstLetter(text: string) {
     if (text && text.length > 0) {
       return text.charAt(0).toUpperCase() + text.slice(1);
     }
@@ -14,11 +11,11 @@ module MusikschuleKraft {
     return text;
   }
 
-  export function IsNotNullOrEmpty(text:string):boolean {
+  export function IsNotNullOrEmpty(text: string): boolean {
     return text && text.trim() != '';
   }
 
-  export function TranslateContent(text:string, disableLinks:boolean = false):string {
+  export function TranslateContent(text: string, disableLinks: boolean = false): string {
 
     if (!IsNotNullOrEmpty(text)) {
       return text;
@@ -65,7 +62,7 @@ module MusikschuleKraft {
     return text;
   }
 
-  export function exists($item:JQuery):boolean {
+  export function exists($item: JQuery): boolean {
     return $item.length > 0;
   }
 }

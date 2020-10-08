@@ -27,7 +27,6 @@
     "angular-route": "~1.3.0",
     "angular-sanitize": "~1.3.0",
     "ace-builds": "~1.1.7",
-    "less-elements-old": "*",
-    "DefinitelyTyped": "*"
+    "less-elements-old": "*"
   }
 }

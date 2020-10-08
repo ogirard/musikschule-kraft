@@ -1,18 +1,9 @@
 /**
  * Main type script for www.musikschule-kraft.ch
  */
-
-/// <reference path="../bower_components/DefinitelyTyped/jquery/jquery.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular-route.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/googlemaps/google.maps.d.ts" />
-/// <reference path="mk-util.ts"/>
-/// <reference path="mk-ui.ts"/>
-
 module MusikschuleKraft {
-  export function Start():void {
+  export function Start(): void {
     ApplyRendering();
-    InitializeGoogleMaps();
   }
 
   var mkApp = angular.module('mkApp', [
@@ -20,8 +11,8 @@ module MusikschuleKraft {
     'mkControllers',
     'mkDirectives'
   ]);
-  
-  mkApp.config(['$routeProvider', ($routeProvider:ng.route.IRouteProvider) => {
+
+  mkApp.config(['$routeProvider', ($routeProvider: ng.route.IRouteProvider) => {
     $routeProvider
       .when('/', { templateUrl: 'partials/welcome.part.html', controller: 'RouteController' })
       .when('/kontakt', { templateUrl: 'partials/kontakt.part.html', controller: 'RouteController' })
