@@ -1,0 +1,124 @@
+<div class="mk-page">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1><i class="fa fa-shopping-cart"></i> Angebot</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Einzelunterricht</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7 col-xs-12">
+      <h4>Pro Semester ({{ angebot.lektionen }} Lektionen)</h4>
+
+      <p>
+        <strong>Einzelunterricht</strong> (Keyboard, El. Orgel, E-Piano) à ca. 30 Minuten<br/>
+        CHF {{ angebot.preise.einzel30 * angebot.lektionen }}.— ({{ angebot.preise.einzel30 }}.— pro Lektion)
+      </p>
+
+      <p>
+        <strong>Einzelunterricht</strong> (Keyboard, El. Orgel, E-Piano) à ca. 45 Minuten<br/>
+        CHF {{ angebot.preise.einzel45 * angebot.lektionen }}.— ({{ angebot.preise.einzel45 }}.— pro Lektion)
+      </p>
+
+      <p>
+        <strong>Zweierunterricht</strong> (Keyboard) à ca. 30 Minuten<br/>
+        CHF {{ angebot.preise.zweier30 * angebot.lektionen }}.— ({{ angebot.preise.zweier30 }}.— pro Lektion)
+        pro Teilnehmer/in
+      </p>
+
+      <p class="text-muted">
+        Preisreduktion ab 2 Schüler/innen, die im gleichen Haushalt wohnen.
+      </p>
+      <br class="hidden-xs hidden-sm"/>
+      <br class="hidden-xs hidden-sm"/>
+    </div>
+    <div class="col-md-5 col-xs-12">
+      <h4>Ihre Vorteile bei der Musikschule Kraft</h4>
+
+      <ul>
+        <li><strong>Kostenlose</strong> Schnupperlektion</li>
+        <li>Instrumente können <strong>gemietet</strong> werden</li>
+        <li><strong>Beratung</strong> beim Neukauf eines Instrumentes</li>
+        <li><strong>Eintritt</strong> für Einzel- oder Zweierunterricht <strong>jederzeit möglich</strong></li>
+      </ul>
+      <br/>
+
+      <div class="text-primary" style="margin-bottom: -48px">
+        <blockquote>Nur Mut zu Ihrem neuen Hobby, ich beisse nicht. Es braucht keine
+          Vorkenntnisse und es ist für jedes Alter geeignet!
+        </blockquote>
+      </div>
+
+      <img class="mk-img pull-right" src="img/vorteile.png" alt="Vorteile bei der Musikschule Kraft"
+           style="z-index: 99"/>
+    </div>
+  </div>
+  <div class="row mk-highlight-row">
+    <div class="col-md-10 col-xs-12">
+      <strong>Anmelden? Lust auf eine Probelektion?</strong>
+
+      <div class="pull-right"><i class="fa fa-envelope text-primary"></i> <a href="#/kontakt">Kontaktieren Sie
+        mich!</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="gruppenkurse" class="mk-anchor"></div>
+      <br/>
+      <br class="hidden-xs hidden-sm"/>
+      <br class="hidden-xs hidden-sm"/>
+
+      <h3>Keyboard Gruppenkurse</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 hidden-xs hidden-sm">
+      <br/>
+      <img class="mk-img" src="img/photos/gruppenkurs.png" alt="Gruppenkurse"/>
+    </div>
+    <div class="col-md-8 col-sm-12">
+
+      <h4>Kurse {{ angebot.gruppenkurse.jahr }}</h4>
+
+      <ul>
+        <li ng-repeat="kurs in angebot.gruppenkurse.kurse" ng-show="kurs.von">
+          <strong>{{ kurs.name }}</strong>: {{ kurs.von + ' bis ' + kurs.bis }}<br/>
+          <em>{{ kurs.wochentag + ' ' + kurs.zeit_von + ' bis ' + kurs.zeit_bis + ' Uhr (' +
+            angebot.gruppenkurse.lektionen + 'x)' }}</em>
+        </li>
+      </ul>
+
+      <h4>Kurskonditionen</h4>
+
+      <p>
+        <strong>{{ angebot.gruppenkurse.lektionen }} Lektionen</strong><br/>
+        Maximale Anzahl Teilnehmer: 5 Schüler/innen<br/>
+        Kinder ab 9 Jahren und Erwachsene bis 99 Jahre<br/>
+      </p>
+
+      <h4>Preis (pro Person)</h4>
+
+      <p>
+        Fr. {{ angebot.gruppenkurse.preis }}.- bis 3 Personen und ab 4 Personen Fr. {{
+        angebot.gruppenkurse.preis_ab4
+        }}.-<br/>
+        Notenmaterial Fr. {{ angebot.gruppenkurse.material }}.-
+      </p>
+
+      <h4>Anmeldung</h4>
+
+      <p>
+        <a href="#/kontakt/formular">Hier</a> können Sie sich direkt anmelden. <br/>
+        Anmeldeschluss ist der <strong>{{ angebot.gruppenkurse.anmeldeschluss }}</strong>
+      </p>
+
+      <img class="mk-img visible-sm visible-xs pull-right" src="img/photos/gruppenkurs.png" alt="Gruppenkurse"/>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>

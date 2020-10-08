@@ -1,0 +1,180 @@
+[
+    {
+        "wann": "März 2020",
+        "titel": "Tag der offenen Türe März 2020",
+        "inhalt": "Mittwoch, 25. März 16:00 bis 18:00 Uhr${N}Samstag, 28. März 10:00 bis 12:00 Uhr${N}${L*:data\/flyers\/flyer_mar_2020.pdf|Flyer März 2020}",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "21. Juni 2019",
+        "titel": "Fête de la Musique",
+        "inhalt": "Auftritt der Musikschule Kraft am ${L*:https:\/\/de.wikipedia.org\/wiki\/F%C3%AAte_de_la_Musique|Fête de la Musique} in Port und in Ipsach${N}Port: auf dem Dorfplatz um 18:00 Uhr (Dauer ca. 20 Min., findet nur bei schönem Wetter statt).${N}Ipsach: vor der Mehrzweckhalle um 19:30 Uhr (Dauer ca. 20 Min., bei schlechtem Wetter in der MZH)",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "13. Dezember 2018",
+        "titel": "Weihnachtskonzert",
+        "inhalt": "Donnerstag, 13. Dezember 2018 in der Kirche Nidau${N}Konzertbeginn 19:30 (Türöffnung 19:15)${N}Nebst den Weihnachtsliedern und anderen bekannten Liedern werden wir eine amüsante Weihnachtsgeschichte hören. Die Schülerinnen und Schüler der Musikschule Kraft freuen sich auf deinen Besuch!${N}Eintritt frei, Kollekte.",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "6. Mai 2018",
+        "titel": "Kleines Sonntagskonzert",
+        "inhalt": "Es spielen die langjährigen SchülerInnen der Musikschule Kraft${N}Sonntag, 6. Mai 2018${N}Konzertbeginn 11:30 Uhr (Türöffnung 11:15 Uhr)${N}In Ipsach, im Singsaal im Gemeindehaus.${N}> ${L:#\/aktuell\/konzert\/2018|Sonntagskonzert 2018}",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "März 2018",
+        "titel": "Tag der offenen Türe März 2018",
+        "inhalt": "Mittwoch, 21. März 16:00 bis 18:00 Uhr${N}Samstag, 24. März 10:00 bis 12:00 Uhr${N}${L*:data\/flyers\/flyer_mar_2018.pdf|Flyer März 2018}",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "November 2017",
+        "titel": "Tag der offenen Türe November 2017",
+        "inhalt": "Samstag, 11. November 10:00 bis 15:00 Uhr${N}${L*:data\/flyers\/flyer_nov_2017.pdf|Flyer November 2017}",
+        "archiv": false,
+        "highlight": false
+    },
+    {
+        "wann": "März 2017",
+        "titel": "Tag der offenen Türe 2017",
+        "inhalt": "Freitag, 24. März 18:00 bis 20:00 Uhr${N}Samstag, 25. März 10:00 bis 12:00 Uhr${N}Mittwoch, 29. März 14:00 bis 16:00 Uhr${N}${L*:data\/flyers\/flyer_mar_2017.pdf|Flyer März 2017}",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "April 2016",
+        "titel": "Schülerkonzert 2016",
+        "inhalt": "01. April 2016 19:00 Uhr${N}Kirchgemeindehaus Nidau${N}${L:#\/aktuell\/konzert\/2016|Schülerkonzert 2016}",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "November 2015",
+        "titel": "Tag der offenen Tür 2015",
+        "inhalt": "Samstag, 07. November von 09.00 bis 16.00 Uhr${N}${L*:data\/flyers\/flyer_nov_2015.pdf|Flyer November 2015}",
+        "archiv": true,
+        "highlight": true
+    },
+    {
+        "wann": "Oktober 2015",
+        "titel": "Zwiebel- und Obstmarkt Nidau",
+        "inhalt": "Samstag, 17. Oktober${N}Die Musikschule Kraft ist vertreten mit einem eigenen Stand.${N}Probieren Sie das Keyboardspiel direkt am Stand${N}oder schnöbern Sie in diversen Noten und Zubehör!",
+        "archiv": true,
+        "highlight": true
+    },
+    {
+        "wann": "März 2015",
+        "titel": "Tag der offenen Tür 2015",
+        "inhalt": "Freitag, 20. März ab 18:00 bis 20:00${N}Samstag, 21. März ab 10:00 bis 12:00${N}Mittwoch, 25. März ab 14:00 bis 16:00${N}${L*:data\/flyers\/flyer_2015.pdf|Flyer 2015}",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "Freitag 12. Dezember 2014",
+        "titel": "Weihnachtskonzert 2014",
+        "inhalt": "Ort: ${L*:http:\/\/goo.gl\/YmZjiL|Kirche Nidau}${N}Beginn: 19:30 Uhr${N}Türöffnung: 19:15 Uhr${N}Eintritt: Kollekte",
+        "archiv": true,
+        "highlight": true
+    },
+    {
+        "wann": "20. September 2014",
+        "titel": "Portissimo-Märit 2014",
+        "inhalt": "Musikschule Kraft am Portissimo-Märit 2014",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "Herbst 2014",
+        "inhalt": "Neue Daten für ${L:#\/angebot#gruppenkurse|Gruppenkurse Herbst 2014}",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "Mai 2014",
+        "titel": "Ein neuer Look!",
+        "inhalt": "Die Musikschule Kraft hat eine neue Webseite und verbessert die Präsenz im modernen Web Zeitalter.",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "März 2014",
+        "titel": "Tag der offenen Tür 2014",
+        "inhalt": "Freitag, 21.und 28. März ab 18:00 bis 20:00${N}Samstag, 22. März ab 10:00 bis 12:00${N}Mittwoch, 26. März ab 14:30 bis 16:30${N}${L*:data\/flyers\/flyer_2014.pdf|Flyer 2014}",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "März 2013",
+        "titel": "Schülerkonzert 2013",
+        "inhalt": "27. März 2013 19:15 Uhr${N}Matthäuszentrum Port",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "Aktion 2011",
+        "inhalt": "Weihnachtslieder",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "Neu im 2009",
+        "inhalt": "Gruppenkurse",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "2008",
+        "inhalt": "Schülerkonzert 2008",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "24.03.2006",
+        "inhalt": "Schülerkonzert 2006",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "15.08.2005",
+        "inhalt": "neue Stundenplaneinteilung!",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "2005",
+        "inhalt": "Start Wintersemester 2005\/06",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "16.08.2004",
+        "inhalt": "Stundenplaneinteilung 2004",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "19.06.2004",
+        "inhalt": "Stand an der Nidex",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "2004",
+        "inhalt": "Musikschule Kraft mit Stand an der Nidex",
+        "archiv": true,
+        "highlight": false
+    },
+    {
+        "wann": "13.03.2004",
+        "inhalt": "Schülerkonzert in Port",
+        "archiv": true,
+        "highlight": false
+    }
+]

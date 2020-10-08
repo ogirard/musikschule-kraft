@@ -1,0 +1,154 @@
+<div class="mk-page">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1><i class="fa fa-star"></i> Aktuell</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="label label-danger">COVID-19</span><br />
+                    <h3>Corona Schutzkonzept</h3>
+                    <p>Der Unterricht findet wie bisher im Unterrichtslokal statt.
+                        Wir beachten die empfohlenen <a
+                            href="https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/massnahmen-des-bundes.html"
+                            target="_blank">Schutzmassnahmen des BAGs</a>.
+                        Die empfohlenen Sicherheitsabstände können überall eingehalten werden. Es gibt ein
+                        <strong>abgetrenntes Wartezimmer</strong> - bitte vor dem Unterricht <strong>Hände waschen und
+                            desinfizieren</strong>.
+                        Während des Unterrichts sind Lehrerin und die Schüler*innen <strong>durch Plexiglas-Schutzwände
+                            geschützt</strong>.</p>
+                    <div id="carousel-corona" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/corona/corona-1.png" alt="Lokal mit Plexiglas Abtrennungen">
+                            </div>
+                            <div class="item">
+                                <img src="img/corona/corona-2.png" alt="Lokal mit Plexiglas Abtrennungen">
+                            </div>
+                            <div class="item">
+                                <img src="img/corona/corona-3.png" alt="Abgetrennter Warteraum">
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>News und Veranstaltungen</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="mk-news">
+                        <div class="mk-news-entry" ng-repeat="item in news | filter: { archiv : false }"
+                            ng-class="{ first : $first }">
+                            <div class="mk-news-date" ng-show="notNullOrEmpty(item.wann)">{{ item.wann }}</div>
+                            <div class="mk-news-title" ng-class="{'mk-news-highlight': item.highlight}"
+                                ng-show="notNullOrEmpty(item.titel)"><i class="fa fa-star" ng-show="item.highlight"></i>
+                                {{ item.titel }}</div>
+                            <div class="mk-news-content" ng-show="notNullOrEmpty(item.inhalt)"
+                                ng-bind-html="item.inhalt"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="hidden-sm hidden-xs">
+                        <button id="mk-news-archive" type="button" class="btn btn-link mk-btn-link"
+                            data-toggle="collapse" data-target="#newsArchive" onfocus="blur()">
+                            <i class="fa fa-arrow-down"></i> Etwas länger her
+                        </button>
+                        <div id="newsArchive" class="collapse">
+                            <div class="mk-news-archive" mk-disable-links>
+                                <div class="mk-news-entry" ng-repeat="item in news | filter: { archiv : true }"
+                                    ng-class="{ first : $first }">
+                                    <div class="mk-news-date" ng-show="notNullOrEmpty(item.wann)">{{ item.wann }}</div>
+                                    <div class="mk-news-title" ng-show="notNullOrEmpty(item.titel)">{{ item.titel }}
+                                    </div>
+                                    <div class="mk-news-content" ng-show="notNullOrEmpty(item.inhalt)"
+                                        ng-bind-html="item.inhalt"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br class="hidden-sm hidden-xs" />
+                    <br class="hidden-sm hidden-xs" />
+                    <br class="hidden-sm hidden-xs" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <br class="hidden-sm hidden-xs" />
+                    <h3>Schülerkonzert</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#/aktuell/konzert/2018"><img class="mk-img" src="img/konzert/konzert_2018_banner.png"
+                            alt="Schülerkonzert 2018" /></a><br />
+                    <a href="#/aktuell/konzert/2016"><img class="mk-img" src="img/konzert/konzert_2016_banner.png"
+                            alt="Schülerkonzert 2016" /></a><br />
+                    <a href="#/aktuell/konzert/archiv" class="hidden-sm hidden-xs"><strong>Alle
+                            Schülerkonzerte</strong></a>
+                    <br />
+                    <br class="hidden-sm hidden-xs" />
+                    <br class="hidden-sm hidden-xs" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <br class="hidden-sm hidden-xs" />
+                    <br class="hidden-sm hidden-xs" />
+                    <br class="hidden-sm hidden-xs" />
+                    <h3>Portissimo-Märit 2014</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="carousel-portissimo" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portissimo/portissimo_01.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_02.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_03.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_04.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_05.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_06.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_07.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_08.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                            <div class="item">
+                                <img src="img/portissimo/portissimo_09.jpg" alt="Portissimo-Märit 2014">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+    </div>
+</div>

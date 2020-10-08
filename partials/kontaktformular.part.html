@@ -1,0 +1,138 @@
+<div class="mk-page">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1><i class="fa fa-map-marker"></i> Kontakt</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Kontaktformular</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <form ng-controller="ContactMailController" role="form" name="mailForm" novalidate
+            ng-submit="sendContactMail(mailForm.$valid)">
+        <div class="alert alert-success" ng-show="mailsent">
+          Vielen Dank für Ihre Nachricht. Ihre Anfrage wird sobald als möglich beantwortet.<br/>
+          <br/>
+          <a href="#/kontakt">Zurück zu "Kontakt"</a><br/>
+        </div>
+        <div class="alert alert-danger" ng-show="error">
+          Ihre Nachricht konnte leider nicht versendet werden.<br/>
+          Bitte versuchen Sie es später noch einmal oder senden Sie Ihre Nachricht direkt an <a
+            href="mailto:kontakt@musikschule-kraft.ch">kontakt@musikschule-kraft.ch</a>.<br/>
+        </div>
+
+        <div class="form-group"
+             ng-class="{'has-error has-feedback' : (!mailForm.firstname.$pristine || submitted) && mailForm.firstname.$error.required }">
+          <label for="firstname">Vorname</label>
+          <input id="firstname" type="text" class="form-control"
+                 ng-model="message.firstname"
+                 name="firstname"
+                 ng-disabled="mailsent"
+                 required
+                 placeholder="Vorname">
+          <span ng-show="(!mailForm.firstname.$pristine || submitted) && mailForm.firstname.$error.required"
+                class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+          <p class="help-block error"
+             ng-show="(!mailForm.firstname.$pristine || submitted) && mailForm.firstname.$error.required">Geben Sie
+            bitte Ihren Vornamen an.</p>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error has-feedback' : (!mailForm.lastname.$pristine || submitted) && mailForm.lastname.$error.required }">
+          <label for="lastname">Nachname</label>
+          <input id="lastname" type="text" class="form-control"
+                 ng-model="message.lastname"
+                 name="lastname"
+                 ng-disabled="mailsent"
+                 required
+                 placeholder="Nachname">
+          <span ng-show="(!mailForm.lastname.$pristine || submitted) && mailForm.lastname.$error.required"
+                class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+          <p class="help-block error"
+             ng-show="(!mailForm.lastname.$pristine || submitted) && mailForm.lastname.$error.required">Geben Sie bitte
+            Ihren Nachnamen an.</p>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error has-feedback' : (!mailForm.email.$pristine || submitted) && mailForm.email.$invalid }">
+          <label for="email">Ihre E-Mail</label>
+          <input type="email" class="form-control" id="email" name="email"
+                 ng-model="message.email"
+                 placeholder="Ihre E-Mail"
+                 ng-disabled="mailsent"
+                 required>
+          <span ng-show="(!mailForm.email.$pristine || submitted) && mailForm.email.$invalid"
+                class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+          <p class="help-block error"
+             ng-show="(!mailForm.email.$pristine || submitted) && mailForm.email.$error.required">Geben Sie bitte Ihre
+            E-Mail an.</p>
+
+          <p class="help-block error" ng-show="(!mailForm.email.$pristine || submitted) && mailForm.email.$error.email">
+            Geben Sie bitte eine gültige E-Mail an.l</p>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error has-feedback' : (!mailForm.reason.$pristine || submitted) && mailForm.reason.$invalid }">
+          <label for="reason">Grund Ihrer Kontaktaufnahme</label>
+          <select class="form-control mk-select" id="reason" name="reason"
+                  ng-class="{ 'mk-placeholder' : mailForm.reason.$error.required }"
+                  ng-model="message.reason"
+                  ng-disabled="mailsent"
+                  required>
+            <option value="" class="mk-placeholder" default selected disabled>Kontaktgrund auswählen</option>
+            <option value="einzelunterricht">Einzelunterricht (Anmeldung, Frage, etc.)</option>
+            <option value="gruppenkurs">Gruppenkurse (Anmeldung, Frage, etc.)</option>
+            <option value="feedback">Feedback zur Homepage</option>
+            <option value="sonstige">Sonstige Frage / Anmerkung / Nachricht</option>
+          </select>
+          <span ng-show="(!mailForm.reason.$pristine || submitted) && mailForm.reason.$invalid"
+                class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+          <p class="help-block error"
+             ng-show="(!mailForm.reason.$pristine || submitted) && mailForm.reason.$error.required">Geben Sie bitte
+            einen Kontaktgrund an.</p>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error has-feedback' : (!mailForm.messagecontent.$pristine || submitted) && mailForm.messagecontent.$error.required }">
+          <label for="messagecontent">Nachricht</label>
+          <textarea class="form-control mk-messagecontent"
+                    id="messagecontent"
+                    name="messagecontent"
+                    ng-model="message.messagecontent"
+                    placeholder="Nachricht"
+                    ng-disabled="mailsent"
+                    required
+                    rows="5"></textarea>
+          <span ng-show="(!mailForm.messagecontent.$pristine || submitted) && mailForm.messagecontent.$error.required"
+                class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+          <p class="help-block error"
+             ng-show="(!mailForm.messagecontent.$pristine || submitted) && mailForm.messagecontent.$error.required">
+            Geben Sie bitte eine Nachricht an.</p>
+        </div>
+        <br/>
+        <button type="button" ng-click="reset()" class="btn btn-default btn-sm" ng-disabled="mailsent"
+                ng-show="!mailsent">Löschen
+        </button>
+
+        <div class="pull-right">
+          <button type="submit" class="btn btn-primary btn-sm" ng-disabled="mailsent" ng-show="!mailsent">Absenden
+          </button>
+          <button type="button" ng-click="cancel()" class="btn btn-default btn-sm" ng-disabled="mailsent"
+                  ng-show="!mailsent">Abbrechen
+          </button>
+        </div>
+        <br/>
+        <br/>
+      </form>
+    </div>
+    <div class="col-md-4 hidden-xs">
+      <p class="text-center">
+        <img src="img/violin_key.png" alt="Notenschlüssel"/>
+      </p>
+    </div>
+  </div>
+</div>

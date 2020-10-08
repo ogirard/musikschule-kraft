@@ -1,0 +1,67 @@
+{
+    "lektionen": "18",
+    "preise": {
+        "einzel30": "40",
+        "einzel45": "60",
+        "zweier30": "35"
+    },
+    "gruppenkurse": {
+        "lektionen": "8",
+        "preis": "264",
+        "preis_ab4": "224",
+        "material": "34",
+        "jahr": "2014",
+        "anmeldeschluss": "13.Oktober 2014",
+        "kurse": [
+            {
+                "name": "Kurs 1",
+                "von": "17.Oktober 2014",
+                "bis": "5. Dezember 2014",
+                "wochentag": "Freitag",
+                "zeit_von": "14:15",
+                "zeit_bis": "15:00"
+            },
+            {
+                "name": "Kurs 2",
+                "von": "17. Oktober 2014",
+                "bis": "5. Dezember 2014",
+                "wochentag": "Freitag",
+                "zeit_von": "18:05",
+                "zeit_bis": "18:50"
+            },
+            {
+                "name": "Kurs 3",
+                "von": "",
+                "bis": "",
+                "wochentag": "",
+                "zeit_von": "",
+                "zeit_bis": ""
+            },
+            {
+                "name": "Kurs 4",
+                "von": "",
+                "bis": "",
+                "wochentag": "",
+                "zeit_von": "",
+                "zeit_bis": ""
+            },
+            {
+                "name": "Kurs 5",
+                "von": "",
+                "bis": "",
+                "wochentag": "",
+                "zeit_von": "",
+                "zeit_bis": ""
+            },
+            {
+                "name": "Kurs 6",
+                "von": "",
+                "bis": "",
+                "wochentag": "",
+                "zeit_von": "",
+                "zeit_bis": ""
+            }
+        ]
+    },
+    "qr": "https:\/\/musikschule-kraft.ch\/#\/aktuell"
+}

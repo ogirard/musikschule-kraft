@@ -1,0 +1,184 @@
+/**
+ * Main styles for www.musikschule-kraft.ch
+ */
+@import "../bower_components/bootstrap/less/variables";
+@import "../bower_components/less-elements/elements";
+@import "mk-variables.less";
+@import "mk-mixins.less";
+
+@font-face {
+  font-family: 'MK-SansSerif';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/mk-sans-serif-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/mk-sans-serif-webfont.woff') format('woff'), url('../fonts/mk-sans-serif-webfont.ttf') format('truetype'), url('../fonts/mk-sans-serif-webfont.svg#blendermedium') format('svg');
+}
+
+@font-face {
+  font-family: 'MK-Serif';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/mk-serif-webfont.eot') format('embedded-opentype'), url('../fonts/mk-serif-webfont.woff') format('woff'), url('../fonts/mk-serif-webfont.ttf') format('truetype'), url('../fonts/mk-serif-webfont.svg#Math5Regular') format('svg');
+}
+
+@footerheight: 40px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+
+  background: #ffffff url('../img/background.png') repeat-x fixed top;
+  margin-bottom: @footerheight;
+}
+
+p, pre {
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+div.mk-admin-page {
+  min-height: 600px;
+  background-image: url('../img/faded_background.png');
+  border: solid #ffffff;
+  border-width: 0px 1px;
+
+  h1 {
+    color: @brand-primary;
+    font-size: 36pt;
+    padding: 12px 0px;
+
+    &.mk-main-title {
+      color: @brand-primary;
+      .opacity(1);
+      font-size: 36pt;
+      padding-top: 12px;
+      padding-bottom: 4px;
+      float: none;
+    }
+  }
+
+  h3 {
+    font-size: 24pt;
+    color: @brand-primary-other;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+  }
+
+  h4 {
+    color: @gray-dark;
+    font-weight: bold;
+    padding: 0px;
+  }
+
+  p, address {
+    color: @gray;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  li {
+    padding-left: 1.5em;
+    text-indent: -1em;
+    color: @gray;
+  }
+
+  li:before {
+    content: "> ";
+    color: @brand-primary;
+  }
+
+  blockquote {
+    font-size: @font-size-small;
+    font-style: italic;
+    color: @brand-primary;
+  }
+
+  button.mk-btn-link {
+    font-size: @font-size-base;
+    font-family: @font-family-base;
+    margin-top: -3px;
+  }
+
+  textarea.mk-file-editor {
+    min-height: 800px;
+    font-family: @font-family-monospace;
+  }
+
+  pre.mk-file-editor {
+    min-height: 800px;
+    font-family: @font-family-monospace;
+  }
+}
+
+/**
+ * Bootstrap overrides
+ */
+
+.navbar-inverse {
+  @media (min-width: @screen-sm-min) {
+    min-height: 125px;
+  }
+
+  @media (max-width: @screen-sm-min) {
+    min-height: 85px;
+  }
+
+  .navbar-collapse {
+    border: 0px none;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: @brand-primary-gray;
+  }
+
+  .navbar-nav {
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus,
+    {
+      background-color: transparent;
+    }
+
+    > li > a {
+      font-size: @font-size-large;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
+      color: @brand-primary-gray;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.navbar-header {
+  min-height: 70px;
+
+  > .navbar-toggle,
+  > .navbar-toggle:focus {
+    border: 0px none transparent;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      background-color: @brand-primary-other;
+    }
+  }
+}
