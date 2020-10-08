@@ -1,0 +1,23 @@
+{
+  "name": "musikschule-kraft",
+  "version": "1.0.0",
+  "description": "<https://www.musikschule-kraft.ch>",
+  "scripts": {
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogirard/musikschule-kraft.git"
+  },
+  "author": "oli.girard@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ogirard/musikschule-kraft/issues"
+  },
+  "homepage": "https://github.com/ogirard/musikschule-kraft#readme",
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "less": "^3.12.2",
+    "typescript": "^4.0.3"
+  }
+}

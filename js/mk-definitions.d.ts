@@ -1,6 +1,6 @@
-/// <reference path="../bower_components/DefinitelyTyped/jquery/jquery.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular.d.ts" />
-/// <reference path="../bower_components/DefinitelyTyped/angularjs/angular-route.d.ts" />
+/// <reference path="../bower_components/DefinitelyTyped/types/jquery/index.d.ts" />
+/// <reference path="../bower_components/DefinitelyTyped/types/angular/index.d.ts" />
+/// <reference path="../bower_components/DefinitelyTyped/types/angular-route/index.d.ts" />
 
 declare module MusikschuleKraft {
   interface IMainScope extends ng.IScope {
